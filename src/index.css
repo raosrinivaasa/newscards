@@ -1,13 +1,139 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+:root {
+    --primary: #ff4d6d;
+    --neutral: #fff0f3;
+    --secondary : #de9aa6;
+    --yellow-red: linear-gradient(90deg, rgba(180, 154, 58, 1) 0%, rgba(252, 69, 85, 1) 55%, rgba(253, 29, 29, 1) 100%);
+    --blue-green: linear-gradient(90deg, rgba(58, 67, 180, 1) 0%, rgba(69, 252, 119, 1) 55%, rgba(253, 29, 219, 1) 100%);
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa&family=Koulen&family=Neucha&family=Nova+Cut&family=Righteous&family=Roboto+Condensed:wght@300&family=Roboto:wght@400&family=Shadows+Into+Light&family=Teko:wght@300&family=Yanone+Kaffeesatz&display=swap');
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    height: 100vh;
+    font-family: 'Roboto', 'sans-serif';
+  }
+  /*Basic styles*/
+  .mp8 {
+    margin: 8px;
+    padding: 8px;
+  }
+  
+  .mp16 {
+    margin: 16px;
+    padding: 16px;
+  }
+  
+  .mpb8 {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+  .mplr8{
+    margin:0px 8px 0px 8px;
+    padding:0px 8px 0px 8px;
+  }
+  
+  .logoSize {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  .imgSize {
+    width: 256px;
+    height: 256px;
+    object-fit: fill;
+  }
+  .logo{
+    font-family: 'Shadows into light', 'roboto';
+    font-weight: 800;
+  }
+  .link {
+    text-decoration: none !important;
+    color: #fff;
+    border-radius: 32px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  
+  .link:hover {
+    color: var(--primary);
+    background-color: #fff;
+    border: 1px solid var(--primary);
+    transition: all 0.2s;
+  }
+  
+  /*Common flex properties*/
+  .cflex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .rflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center !important;
+    text-align: center;
+  }
+  
+  /*Navbar Styling*/
+  .nav{
+    position: sticky;
+    top:0px;
+    display:flex;
+    justify-content:space-between;
+    box-shadow: 0px 0px 4px 1px var(--primary);
+    background-color: #fff;
+  }
+  #tIcon{
+    margin-right: 8px;
+    padding-right: 8px;
+  }
+  .btn{
+    all: unset;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  /*Section 1 styling */
+  .fWrapper{
+   text-align: left;
+  }
+  .fScroll{
+    display:flex;
+    align-items:center;
+    overflow-x: scroll;
+  }
+  .catBtn{
+    color: black;
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    border-radius: 64px;
+    padding:2px 24px;
+    margin: 2px 8px;
+  }
+  .card {
+    /* border:1px solid navy; */
+    height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 1px rgba(99, 99, 99, 1);
+  }
+  
+  .card>* {
+    width: 80%;
+  }
+  
+  .cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+  }
+  .footer{
+    background-color:rgba(222, 154, 166, 0.5) ;
+  }
+  
